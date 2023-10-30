@@ -1,7 +1,7 @@
+var nome = window.prompt("Oi, Tudo bem!? Qual é o seu nome?")
 window.alert(
-  "Fala Dev, blz? Esse foi meu primeiro projeto estudando na rocketseat. espero que goste! Basicamente é um armazenador de link"
+  "Olá " + nome + ", Seja Bem vindo ao meu primeiro projeto em programação."
 )
-window.confirm("")
 
 function toggleMode() {
   const html = document.documentElement
