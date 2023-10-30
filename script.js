@@ -1,3 +1,8 @@
+window.alert(
+  "Fala Dev, blz? Esse foi meu primeiro projeto estudando na rocketseat. espero que goste! Basicamente é um armazenador de link"
+)
+window.confirm("")
+
 function toggleMode() {
   const html = document.documentElement
   html.classList.toggle("Light")
