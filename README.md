@@ -13,7 +13,7 @@ Projeto desenvolvido no curso Discover. Programa exclusivo e gratuito, promovido
 </p>
 
 <p align="center">
-  <img alt="License" src="./assets/">
+  <img alt="License" src="./assets/preview.jpg">
 </p>
 
 <br>
@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://ogustavoalbuquerque.github.io/ProjetoDiscover/) 
+- [Acesse o projeto finalizado, online](https://ogustavoalbuquerque.github.io/ProjetoDiscover/)
 
 - [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
 
