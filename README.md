@@ -2,7 +2,7 @@
 
 <p align="center">
 Projeto desenvolvido no curso Discover. Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
+<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito" target="_blank">Estude esse projeto em formato de vídeo clicando aqui.</a>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@ Projeto desenvolvido no curso Discover. Programa exclusivo e gratuito, promovido
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+  <img alt="License" src="./assets/">
 </p>
 
 <br>
@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://ogustavoalbuquerque.github.io/ProjetoDiscover/)
+- [Acesse o projeto finalizado, online](https://ogustavoalbuquerque.github.io/ProjetoDiscover/) 
 
 - [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
 
