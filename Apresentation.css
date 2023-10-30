@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg2-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --hightlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+  --webkit-box-shadow: 0px 0px 5px 0px rgba(255, 238, 87, 0.9);
+  --moz-box-shadow: 0px 0px 5px 0px rgba(255, 238, 87, 0.9);
+  --box-shadow: 0px 0px 5px 0px rgba(255, 238, 87, 0.9);
+  --circle-border: 2px double white;
+  --webkit-box-shadow-profile: 0px 0px 9px 0px rgba(255, 238, 87, 0.9);
+  --moz-box-shadow-profile: 0px 0px 9px 0px rgba(255, 238, 87, 0.9);
+  --box-shadow-profile: 0px 0px 9px 0px rgba(255, 238, 87, 0.9);
+}
+
+.Light {
+  --text-color: black;
+  --bg-url: url(./assets/bg2-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --hightlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+  --webkit-box-shadow: 0px 0px 9px 0px rgba(121, 3, 255, 0.9);
+  --moz-box-shadow: 0px 0px 9px 0px rgba(121, 3, 255, 0.9);
+  --box-shadow: 0px 0px 9px 0px rgba(121, 3, 255, 0.9);
+  --circle-border: 2px double black;
+  --webkit-box-shadow-profile: 0px 0px 9px 0px rgba(121, 3, 255, 0.9);
+  --moz-box-shadow-profile: 0px 0px 9px 0px rgba(121, 3, 255, 0.9);
+  --box-shadow-profile: 0px 0px 9px 0px rgba(121, 3, 255, 0.9);
+}
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+}
+body * {
+  font-family: "inter", sans-serif;
+  color: var(--text-color);
+}
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 8px auto 0px auto;
+  padding: 6px;
+}
+
+/*profile*/
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+#profile img {
+  display: block;
+  width: 112px;
+  margin: auto;
+}
+#profile circle {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border: 2px double var(--circle-border);
+  border-radius: 100%;
+  margin: auto;
+  top: 50%;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin-top: 31px;
+  padding: 24px;
+  z-index: 1;
+  -webkit-box-shadow: var(--webkit-box-shadow-profile);
+  -moz-box-shadow: var(--moz-box-shadow-profile);
+  box-shadow: var(--box-shadow-profile);
+}
+.Light #profile circle {
+  -webkit-box-shadow: var(--webkit-box-shadow-profile);
+  -moz-box-shadow: var(--moz-box-shadow-profile);
+  box-shadow: var(--box-shadow-profile);
+}
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/*switch*/
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+#switch button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  animation: slide-out 0.4s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--hightlight-color);
+}
+
+.Light #switch button {
+  animation: slide-in 0.4s forwards;
+}
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  justify-content: center;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/*link*/
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 2px dotted var(--stroke-color);
+  border-radius: 50px;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  -webkit-box-shadow: var(--webkit-box-shadow);
+  -moz-box-shadow: var(--moz-box-shadow);
+  box-shadow: var(--box-shadow);
+}
+/*Adicionando glow nas caixas ul*/
+.Light ul li a {
+  -webkit-box-shadow: var(--webkit-box-shadow);
+  -moz-box-shadow: var(--moz-box-shadow);
+  box-shadow: var(--box-shadow);
+}
+
+/*pseudo-selector*/
+ul li a:hover {
+  background: var(--surface-color-hover);
+  border: 2px dotted var(--text-color);
+}
+
+/*social links*/
+#social-links {
+  display: flex;
+  padding: 8px 0;
+  font-size: 24px;
+  justify-content: center;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--hightlight-color);
+}
+
+footer {
+  padding: 8px;
+  text-align: center;
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg2-desktop.jpg);
+  }
+
+  .Light {
+    --bg-url: url(./assets/bg2-desktop-light.jpg);
+  }
+}
+/*animation*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
